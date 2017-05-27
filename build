@@ -1,0 +1,2 @@
+docker build -t lektor .
+#docker build --no-cache -t lektor .
