@@ -37,7 +37,7 @@ EXPOSE 5000
 COPY run.sh /usr/local/bin/run.sh 
 RUN chmod +x /usr/local/bin/* 
 
-WORKDIR ["/host/lektor/project"]
+WORKDIR /host/lektor/project
 
 ENTRYPOINT ["/bin/bash","/usr/local/bin/run.sh"] 
 CMD ["lektor", "server", "--host", "0.0.0.0"]
