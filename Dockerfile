@@ -27,7 +27,8 @@ rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/bin/python2.7 /usr/local/bin/python
 
-RUN curl -f https://www.getlektor.com/install.sh | sh
+RUN curl -f https://www.getlektor.com/install.sh && \
+    ./install.sh
 
 RUN git clone https://github.com/eigener-server/lektor-bootstrap.git /project
 
